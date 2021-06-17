@@ -89,7 +89,7 @@ We highly recommend executing the PowerShell scripts on an Azure Virtual Machine
    | Virtual machine name           | _`synapse-lab-setup-vm` (or unique name if not available)_      |
    | Region                         | _select the resource group's location_             |
    | Availability options           | _select `No infrastructure redundancy required`_   |
-   | Image                          | _select `Windows 10 Pro, Version 1809 - Gen1`_     |
+   | Image                          | _select `Windows 10 Pro, Version 2020H2 - Gen1`_     |
    | Azure Spot instance            | _set to `Unchecked`_                                      |
    | Size                           | _select `Standard_D8s_v3`_                         |
    | Username                       | _select `labuser`_                             |
@@ -159,7 +159,7 @@ Install these pre-requisites on your **deployment VM** before continuing.
 - Install VC Redist: <https://aka.ms/vs/15/release/vc_redist.x64.exe>
 - Install MS ODBC Driver 17 for SQL Server: <https://www.microsoft.com/download/confirmation.aspx?id=56567>
 - Install SQL CMD x64: <https://go.microsoft.com/fwlink/?linkid=2082790>
-- Install Microsoft Online Services Sign-In Assistant for IT Professionals RTW: <https://www.microsoft.com/download/details.aspx?id=28177>
+- ~Install Microsoft Online Services Sign-In Assistant for IT Professionals RTW: <https://www.microsoft.com/download/details.aspx?id=28177>~ this package is no longer available
 - Install [Git client](https://git-scm.com/downloads) accepting all the default options in the setup.
 - [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/install/installing-windows-powershell?view=powershell-7)
 
@@ -215,7 +215,7 @@ Perform all of the steps below from your **deployment VM**:
 
 **IMPORTANT**
 
-* Once the last command has completed, **close the Windows PowerShell window** so you can import the newly installed Az.CosmosDB cmdlet.
+* Once the last command has completed, **reboot the computer** so you can import the newly installed Az.CosmosDB cmdlet.
 
 ### Task 3: Execute setup scripts
 
